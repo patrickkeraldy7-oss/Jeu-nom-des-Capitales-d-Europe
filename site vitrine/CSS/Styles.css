@@ -1,0 +1,152 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.Banniere_du_site
+{
+    
+    width: 10%;
+    height: 12;
+    background: skyblue;
+    border: blue solid 1px;
+    box-shadow: 5px 5px 5px gold;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+
+}
+
+.align_center
+{
+    float: right;
+   
+}
+.cercle
+{
+    font-size: 0.6em;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+     border: gold dotted 3px;
+     box-shadow: 5px 5px 5px gray;
+    border-radius: 50%;
+}
+
+.span_cercle
+{
+    color: white;
+    position: absolute;
+    bottom: 45%;
+    margin-left: 3px;
+    
+}
+
+aside{
+   float: right;
+   margin-top: 5px;
+   size: 200px;
+   border:blue solid 1px;
+   border-radius: 10px 10px 10px 10px; 
+   padding: 5px;
+}
+
+.menu{
+    width: auto;
+    margin-bottom: 0pc;
+    display: flex;
+    border: blue solid 1px;
+ 
+    z-index: 2;
+    
+}
+
+.menu li{
+list-style: none;
+
+}
+
+.menu li a:hover{
+    background-color: skyblue;
+    color: white;
+}
+
+.li_separation{
+    padding: 3px;
+    
+}
+
+footer{
+    text-align: center;
+    
+}
+
+.li_sites{
+    display: none;
+    margin-top: -10px;
+    margin-left: 160px;
+    border: blue solid 1px;
+   list-style: none; 
+   z-index: 1;
+   position: absolute;
+   background-color: aqua;
+   padding: 5px;
+}
+.li_sites li{
+    border: blue dotted 1px;
+    background-color: white;
+    padding: 3px;
+}
+table {
+border-collapse: collapse;
+width: 100%;
+table-layout: fixed;
+}
+
+thead, tbody {
+border: 1px solid black;
+padding: 8px;
+text-align: left;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+#vitrine_un, #vitrine_deux, #vitrine_trois, #commerce_un, #commerce_deux, #commerce_trois, #restaurant_un, #restaurant_deux, #restaurant_trois{
+    width: 85%;
+    height: 200px;
+    margin: 7px;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 10px 10px 10px 10px;
+    
+    border:skyblue solid 1px;
+    padding: 7px;
+}
+
+#page_vitrine_element_un, #page_vitrine_element_deux, #page_vitrine_element_trois, #page_commerce_element_un, #page_commerce_element_deux, #page_commerce_element_trois, 
+#page_restaurant_element_un, #page_restaurant_element_deux, #page_restaurant_element_trois 
+{
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: 300px;
+    margin: 7px;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 10px 10px 10px 10px;
+    
+    border:skyblue solid 1px;
+    padding: 7px;
+}
+.bas_de_div_vitrine, .bas_de_div_commerce, .bas_de_div_restaurant
+{
+    width: auto;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background:lightyellow ;
+}
+h1
+{
+    margin-left: 10px;
+    font-size: 1.8em;
+    color: skyblue;
+}

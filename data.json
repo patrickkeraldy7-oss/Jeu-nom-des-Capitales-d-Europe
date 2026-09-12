@@ -1,0 +1,18 @@
+{
+    "reponses": [
+        "Bonjour \u00e0 toi",
+        "Salut !",
+        "Je suis ton IA qui apprend !",
+        "La couleur de la mer est bleu",
+        "la couleur de la mer est blue",
+        "La pomme est verte"
+    ],
+    "questions": [
+        "bonjour",
+        "salut",
+        "comment tu t'appelles ?",
+        "quel est la couleur de la mer",
+        "quel est la couleur de la mer",
+        "pomme"
+    ]
+}

@@ -1,0 +1,30 @@
+[
+    {
+       "id": 1, "nom": "plaquettes de freins", 
+        "prix": 35.0,
+        "description": "Plaquettes de freins pour citroën saxo",
+        "quantite": 10,
+        "image": "images/plaquette_de_freins.jpg",
+        "ref": "référence 121",
+        "page": "plaquettes-de-freins.html"
+        
+    },
+    {
+        "nom": "Filtre à huile",
+        "description": "filtre à huile pour citroën saxo ",
+        "prix": 9.5,
+        "quantite": 4,
+        "image": "images/filtre_a_huile.jpg",
+        "ref-page": "1",
+        "page": "filtre-a-huile.html"
+    },
+    {
+        "nom":"Filtre à air",
+        "description": "filtre à air pour voitures",
+        "prix": 7.5,
+        "quantite": 0,
+        "image":"images/filtre_a_air.jpg",
+        "ref-page": "2",
+        "page": "filtre-a-air.html"
+    }
+]
