@@ -1,2 +1,0 @@
-# Jeu-nom-des-Capitales-d-Europe
-Bonjour, ben, voilà j'ai créé ma première application qui marche. C'est une application où il faut entrer les dix premières capitales d'Europe, avec un bouton annulé si on se trompe avant la validation de la réponse, un bouton pour arrêter le jeu et un bouton rejouer qui s'affiche à la fin du jeu. 
