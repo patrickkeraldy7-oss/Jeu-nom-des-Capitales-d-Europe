@@ -1,0 +1,44 @@
+
+#questions-reponses{
+    display: none;
+    text-align: center;
+    background-color: rgb(94, 255, 0);
+    border: 3px solid ivory;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: inset 0 0 10px ivory, 0 0 10px #000000;
+     position: fixed;
+    z-index: 1000;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+    
+}
+#resultat{
+    text-align: center;
+    background-color: aqua;
+    
+}
+
+section{
+        padding: 4% 6%;
+        margin-top: 3%;
+        width: 80%;
+        align-items:center;
+        text-align: center;
+        margin-top: 3%;
+        margin-left: 3%;
+        font-size: 1.5rem;
+        color: black;
+        background: linear-gradient(145deg, white, ivory);
+        border: none;
+        border-radius: 12px;
+        box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #3a3a3a;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+#h1-jeu{
+    color: gold;
+    text-shadow: #000000 5px 5px 5px;
+}
