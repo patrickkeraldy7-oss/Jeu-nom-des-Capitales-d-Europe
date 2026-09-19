@@ -1,3 +1,12 @@
+const menu = document.getElementById("menu");
+
+const accueil = document.createElement("a");
+accueil.href = "index.html";
+accueil.id = "index";
+accueil.title = "Page d'accueil";
+accueil.textContent = "Accueil";
+menu.insertBefore(accueil, menu.firstChild);
+
 // Fonction pour créer un élément de menu
 function createMenuItem(label, url, id) {
     const ul = document.createElement("ul");
