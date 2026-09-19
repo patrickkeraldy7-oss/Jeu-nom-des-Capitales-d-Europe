@@ -1,44 +1,40 @@
-<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <title>Les applications d'un programmeur informatique en herbe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        
     </head>
     <body>
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li id="liApplications">Menu </li>
+                    <ul id="ul_contenus"></ul>
+                </ul>
+            </nav>
+        </header>
+        <script src="menu.js" ></script>
+        <main>
+            <h1>Les applications d'un programmeur informatique en herbe</h1>
+            <section>
+                <div id="JeuDesCapitales">
+                    <h2>Jeu des Capitales d'Europe</h2>
+                    <p>Le but de ce jeu est de deviner le nom de dix capitales d'Europe !</p>
+                    <p><a href="jeu_Europe.html" title="Jeu quel est le nom des Capitales d'Europe">Jeu quel est le nom des Capitales d'Europe</a></p>
+                </div>
+            </section>
+            <section>
+                <div id="calculatrice"></div>
+            </section>
+            <section>
+                <div id="carnetDeNote"></div>
+            </section>
         
-        <nav id="menu">
-          <script src="menu.js" ></script>
-        </nav>
-        <section>
-        <div>
-            <h3 id="resultat"></h3>
-        </div>
-        <div>
-        <h1 id="h1-jeu">Jeu quel est le nom des Capitales d'Europe</h1>
-        <p>Bienvenue dans le jeu des capitales d'Europe ! </p>
-        <p>Le but de ce jeu est de deviner le nom de dix capitales d'Europe !</p>
-        <p>Pour jouer, cliquer sur le bouton ci-dessous :</p>
-        <p>
-        <button type="button" id="boutonStart">Commencer le jeu</button>
-        </p>
-        </div>
-        <div id="questions-reponses">
-            <span id="fin-de-jeu">
-             <span id="resultat-reponse"></span><br>
-             <hr>
-             <span id="questions"></span><br>
-             <input type="text" id="reponse" placeholder="Entrez votre réponse ici"><br>
-             <button type="button" id="boutonValidez">Validez</button> - <button type="button" id="boutonAnnuler">Annuler</button><br><br>
-             <button type="button" id="boutonTerminer">Terminer</button><br>
-             <span id="score"></span>
-            </span>
-
-        </div>
-
-        </section>
-        
+        </main>
+        <footer>
+            2026
+        </footer>
     </body>
 </html>
