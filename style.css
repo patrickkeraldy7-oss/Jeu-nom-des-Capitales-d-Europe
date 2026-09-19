@@ -34,7 +34,7 @@ section{
         background: linear-gradient(145deg, white, ivory);
         border: none;
         border-radius: 12px;
-        box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #3a3a3a;
+        box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #494949;
         transition: box-shadow 0.3s ease, transform 0.3s ease;
 
 }
@@ -57,4 +57,44 @@ section{
 
 #index:hover{
     background-color: skyblue;
+<<<<<<< HEAD
+}
+#liApplications{
+   list-style: none;
+   color: white;
+   background-color: grey;
+   border: blue solid 1px;
+   margin-left: 3px;
+   padding: 3px;
+}
+#liApplications:hover{
+    background-color: skyblue;
+}
+#SpanIndex{
+    background-color: #e6e5e5;
+    padding: 3px;
+}
+#ul_contenus{
+    display: none;
+    margin-left: 9px;
+    position: fixed;
+    z-index: 1;
+}
+#index, #Calculatrice, #liCarnetDeNote, #liNomDesCapitales{
+    list-style: none;
+    background-color: #e6e5e5;
+    border: blue solid 1px;
+    padding: 3px;
+}
+#index, #Calculatrice:hover, #liCarnetDeNote:hover, #liNomDesCapitales:hover{
+    background-color: skyblue;
+    
+}
+footer{
+   
+    text-align: center;
+    font-size: 0.8em;
+     margin-top: 30px;
+=======
+>>>>>>> 9bcb7364db8435366fdec058b647fa52a5864793
 }
