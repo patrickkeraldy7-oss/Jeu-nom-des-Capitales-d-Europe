@@ -42,3 +42,56 @@ section{
     color: gold;
     text-shadow: #000000 5px 5px 5px;
 }
+#menu{
+        display: flex;
+        padding: 1%;
+        align-items:center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background: linear-gradient(145deg, white, ivory);
+        border: 1px solid ivory;
+        box-shadow: 6px 6px 12px skyblue, -6px -6px 12px skyblue;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#index:hover{
+    background-color: skyblue;
+}
+#liApplications{
+   list-style: none;
+   color: white;
+   background-color: grey;
+   border: blue solid 1px;
+   margin-left: 3px;
+   padding: 3px;
+}
+#liApplications:hover{
+    background-color: skyblue;
+}
+#SpanIndex{
+    background-color: #e6e5e5;
+    padding: 3px;
+}
+#ul_contenus{
+    display: none;
+    margin-left: 9px;
+    position: fixed;
+    z-index: 1;
+}
+#index, #Calculatrice, #liCarnetDeNote, #liNomDesCapitales{
+    list-style: none;
+    background-color: #e6e5e5;
+    border: blue solid 1px;
+    padding: 3px;
+}
+#index, #Calculatrice:hover, #liCarnetDeNote:hover, #liNomDesCapitales:hover{
+    background-color: skyblue;
+    
+}
+footer{
+   
+    text-align: center;
+    font-size: 0.8em;
+     margin-top: 30px;
+}
