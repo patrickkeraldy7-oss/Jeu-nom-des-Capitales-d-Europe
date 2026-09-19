@@ -1,26 +1,3 @@
-const menu = document.getElementById("menu");
-
-const accueil = document.createElement("a");
-accueil.href = "index.html";
-accueil.id = "index";
-accueil.title = "Page d'accueil";
-accueil.textContent = "Accueil";
-menu.insertBefore(accueil, menu.firstChild);
-
-// Fonction pour créer un élément de menu
-function createMenuItem(label, url, id) {
-    const ul = document.createElement("ul");
-    ul.id ="ulApplications";
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.textContent = label;
-    a.href = url;
-    li.id = id;
-    li.appendChild(a);
-    ul.appendChild(li);
-    return li;
-}
-
 // Charger le JSON et construire le menu
 fetch("menu.json")
     .then(response => {
