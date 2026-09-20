@@ -1,6 +1,6 @@
 [
-    { "label": "Accueil ", "url": "/", "id": "index" },
-    { "label": "Jeu Europe", "url": "/jeu_Europe.html", "id": "liNomDesCapitales" },
-    { "label": "Calculatrice", "url": "/calculatrice.html", "id": "Calculatrice" },
-    { "label": "Carnet de note", "url": "/carnetdenote.html", "id": "liCarnetDeNote" }
+    { "label": "Accueil", "url": "./index.html", "id": "index" },
+    { "label": "Jeu Europe", "url": "./jeu_Europe.html", "id": "liNomDesCapitales" },
+    { "label": "Calculatrice", "url": "./calculatrice.html", "id": "Calculatrice" },
+    { "label": "Carnet de note", "url": "./carnetdenote.html", "id": "liCarnetDeNote" }
 ]
