@@ -1,24 +1,35 @@
-// Charger le JSON et construire le menu
-fetch("menu.json")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`Erreur HTTP : ${response.status}`);
+
+async function menu() {
+    const ulMenu = document.getElementById("ul_contenus");
+
+    try {
+        const reponse = await fetch('menu.json');
+
+        if (!reponse.ok) {
+            throw new Error(`Erreur lors du chargement du menu : ${reponse.status}`);
         }
-        return response.json();
-    })
-    .then(menuItems => {
-        const menuContainer = document.getElementById("ul_contenus");
-        menuItems.forEach(item => {
-            // Validation basique des données
-            if (item.label && item.url) {
-                menuContainer.appendChild(createMenuItem(item.label, item.url, item.id));
-            }
+
+        const li = await reponse.json()
+        ulMenu.innerHTML = "";
+
+        li.forEach(adresse => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+
+            a.href = adresse.url;
+            a.textContent = adresse.label;
+            a.id = adresse.id;
+            
+            li.appendChild(a);
+            ulMenu.appendChild(li);
+            console.log(ulMenu)
         });
-    })
-    .catch(error => {
-        console.error("Impossible de charger le menu :", error);
-        document.getElementById("menu").innerHTML = "<li>Menu indisponible</li>";
-    });
+    } catch (error) {
+        console.log()
+    }
+}
+
+menu();
 
 const contenus = document.getElementById("ul_contenus");
 const liApplications = document.getElementById("liApplications");
