@@ -44,6 +44,7 @@ section{
 }
 #menu{
         display: flex;
+        width: 80%;
         padding: 1%;
         align-items:center;
         margin-top: 3%;
@@ -53,10 +54,6 @@ section{
         border: 1px solid ivory;
         box-shadow: 6px 6px 12px skyblue, -6px -6px 12px skyblue;
         transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-#index:hover{
-    background-color: skyblue;
 }
 #liApplications{
    list-style: none;
@@ -74,13 +71,15 @@ section{
     padding: 3px;
 }
 #ul_contenus{
+    
+    list-style: none;
     display: none;
-    margin-left: 9px;
+    margin-left: auto;
     position: fixed;
     z-index: 1;
 }
 #index, #Calculatrice, #liCarnetDeNote, #liNomDesCapitales{
-    list-style: none;
+    font-size: clamp(14px, 2.5vw, 18px);
     background-color: #e6e5e5;
     border: blue solid 1px;
     padding: 3px;
