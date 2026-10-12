@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculatrice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <script src="../scripts/calculatrice.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li id="liApplications">Menu </li>
+                    <ul id="ul_contenus"></ul>
+                </ul>
+            </nav>
+        </header>
+        <script src="../menu.js" ></script>
+        <main>
+            <section>
+            <div id="boutonCalcul">
+
+                <table>
+                    <header>
+                      <tr>Appuyer sur l'un des boutons ci-dessous pour faire une addition, multiplication, division, etc., et entrer les chiffres dans la zone de texte. Ensuite, appuyer sur le bouton "Validez" pour voir le résultat.</tr>
+                    </header>
+                    <tbody>
+                    <tr>
+                        <th><button type="button" id="Addition" onclick="boutonAddition()" value="1">Addition</button></th>
+                        <th><button type="button" id="multiplication" onclick="boutonMultiplication()">multiplication</button></th>
+                        <th><button type="button" id="division" onclick="boutonDivision()">division</button></th>
+                        <th><button type="button" id="soustraction" onclick="boutonSoustraction()">soustraction</button></th>
+                        <th><button type="button" id="pourcentage" onclick="boutonPourcentage()">pourcentage</button></th>
+                        <th><button type="button" id="TVA" onclick="boutonTva()">TVA</button></th>
+                    </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <head>
+                        <tr>Ou cliquez sur un ou plusieurs bouton ci-dessous pour ajouter un produit au panier</tr>
+                    </head>
+                    <tbody>
+                    <tr>
+                        
+                        <td><button type="button" id="legumeDivers" onclick="legumes()">Légumes divers</button></td>
+                        <td><button type="button" id="ail" onclick="boutonAil()">ail</button></td>
+                        <td><button type="button" id="oignon" onclick="boutonOignon()">Oignon</button></td>
+                        <td><button type="button" id="tomate" onclick="boutonTomates()">Tomates</button></td>
+                       
+                    
+                    </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div id="panier-flex">
+
+                <p id="description-produits">
+                    
+                </p>
+                <p id="prix">
+                  <span id="affichageProduits"></span><span id="poids"></span> 
+                </p>
+                
+                
+                
+            </div>
+            <div>
+               Total Tva : <span id="afficheTva"></span> Total TTC : <span id="boxTotal"></span><br>
+                <input type="text" id="nombre" value="0">
+                <button type="button" id="validation" onclick="validation()">Validez</button>
+                <button type="button" id="annule" onclick="annule()">Annuler</button><br>
+
+
+            </div>
+            </section>
+        </main>
+        <footer>
+           <p></p>
+        </footer>
+    </body>
+</html>
