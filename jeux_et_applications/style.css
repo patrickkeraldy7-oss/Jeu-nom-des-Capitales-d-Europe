@@ -1,0 +1,126 @@
+
+#questions-reponses{
+    display: none;
+    text-align: center;
+    background-color: rgb(94, 255, 0);
+    border: 3px solid ivory;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: inset 0 0 10px ivory, 0 0 10px #000000;
+     position: fixed;
+    z-index: 1000;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+    
+}
+#resultat{
+    text-align: center;
+    background-color: aqua;
+    
+}
+
+section{
+        padding: 4% 6%;
+        
+        width: 80%;
+        align-items:center;
+        text-align: center;
+        margin-top: 3%;
+        margin-left: 3%;
+        font-size: 1rem;
+        color: black;
+        background: linear-gradient(145deg, white, ivory);
+        border: none;
+        border-radius: 12px;
+        box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #494949;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+#h1-jeu{
+    color: gold;
+    text-shadow: #000000 5px 5px 5px;
+}
+#menu{
+        display: flex;
+        width: 80%;
+        padding: 1%;
+        align-items:center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background: linear-gradient(145deg, white, ivory);
+        border: 1px solid ivory;
+        box-shadow: 6px 6px 12px skyblue, -6px -6px 12px skyblue;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#liApplications{
+   list-style: none;
+   color: white;
+   background-color: grey;
+   border: blue solid 1px;
+   margin-left: 3px;
+   padding: 3px;
+}
+#liApplications:hover{
+    background-color: skyblue;
+}
+#SpanIndex{
+    background-color: #e6e5e5;
+    padding: 3px;
+}
+#ul_contenus{
+    
+    list-style: none;
+    display: none;
+    margin-left: auto;
+    position: fixed;
+    z-index: 1;
+}
+#index, #Calculatrice, #liCarnetDeNote, #liNomDesCapitales{
+    font-size: clamp(14px, 2.5vw, 18px);
+    background-color: #e6e5e5;
+    border: blue solid 1px;
+    padding: 3px;
+}
+#index, #Calculatrice:hover, #liCarnetDeNote:hover, #liNomDesCapitales:hover{
+    background-color: skyblue;
+    
+}
+footer{
+    background-color: #bebebb;
+    text-align: center;
+    font-size: 0.8em;
+     margin-top: 30px;
+}
+#boutonCalcul{
+    
+    width: auto;
+}
+
+#Addition, #multiplication, #soustraction, #division, #pourcentage, #TVA{
+    width: auto;
+    background-color: #66E0A3;
+    color: white;
+    
+}
+#Addition:hover, #multiplication:hover, #soustraction:hover, #division:hover, #pourcentage:hover, #TVA:hover{
+    background-color: #50C878;
+}
+#description-produits{
+    border: #bebebe solid 3px;
+    text-align: left;
+    color: blue;
+    width: 99%;
+    padding-left: 5px;
+}
+#panier-flex{
+    display: flex;
+    
+}
+#affichageQuantite, #affichageTva, #affichagePrix{
+    margin-right: 5px;
+    background-color:lightslategrey;
+    color: white;
+}
