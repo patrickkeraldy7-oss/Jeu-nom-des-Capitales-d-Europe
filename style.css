@@ -89,8 +89,38 @@ section{
     
 }
 footer{
-   
+    background-color: #bebebb;
     text-align: center;
     font-size: 0.8em;
      margin-top: 30px;
+}
+#boutonCalcul{
+    
+    width: auto;
+}
+
+#Addition, #multiplication, #soustraction, #division, #pourcentage, #TVA{
+    width: auto;
+    background-color: #66E0A3;
+    color: white;
+    
+}
+#Addition:hover, #multiplication:hover, #soustraction:hover, #division:hover, #pourcentage:hover, #TVA:hover{
+    background-color: #50C878;
+}
+#description-produits{
+    border: #bebebe solid 3px;
+    text-align: left;
+    color: blue;
+    width: 99%;
+    padding-left: 5px;
+}
+#panier-flex{
+    display: flex;
+    
+}
+#affichageQuantite, #affichageTva, #affichagePrix{
+    margin-right: 5px;
+    background-color:lightslategrey;
+    color: white;
 }
