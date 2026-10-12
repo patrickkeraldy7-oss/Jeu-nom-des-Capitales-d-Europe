@@ -100,7 +100,7 @@ footer{
 }
 
 #Addition, #multiplication, #soustraction, #division, #pourcentage, #TVA{
-  
+  width: auto;
     background-color: #66E0A3;
     color: white;
     
