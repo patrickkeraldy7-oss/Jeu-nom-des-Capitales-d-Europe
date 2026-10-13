@@ -44,10 +44,12 @@ section{
 }
 #menu{
         display: flex;
-        width: 80%;
+        width: auto;
         padding: 1%;
         align-items:center;
         margin-top: 3%;
+        margin-left: 4%;
+        margin-right: 4%;
         margin-bottom: 3%;
         color: black;
         background: linear-gradient(145deg, white, ivory);
@@ -95,12 +97,17 @@ footer{
      margin-top: 30px;
 }
 #boutonCalcul{
-    
     width: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+
 }
 
 #Addition, #multiplication, #soustraction, #division, #pourcentage, #TVA{
-  width: auto;
+    width: 67px;   /* Largeur */
+       
+    font-size: 0.6em; /* Taille du texte */
+    
     background-color: #66E0A3;
     color: white;
     
