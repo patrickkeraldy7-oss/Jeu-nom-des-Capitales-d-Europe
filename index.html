@@ -1,38 +1,72 @@
+
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Les applications d'un programmeur informatique en herbe</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul id="menu">
-                    <li id="liApplications">Menu </li>
-                    <ul id="ul_contenus"></ul>
-                </ul>
-            </nav>
-        </header>
-        <script src="menu.js" ></script>
-        <main>
-            <h1>Les applications d'un programmeur informatique en herbe</h1>
-            <section>
-                <div id="JeuDesCapitales">
-                    <h2>Jeu des Capitales d'Europe</h2>
-                    <p>Le but de ce jeu est de deviner le nom de dix capitales d'Europe !</p>
-                    <p><a href="jeu_Europe.html" title="Jeu quel est le nom des Capitales d'Europe">Jeu quel est le nom des Capitales d'Europe</a></p>
-                </div>
-            </section>
-            <section>
-                <div id="calculatrice"></div>
-            </section>
-            <section>
-                <div id="carnetDeNote"></div>
-                </section>
-        </main>
-        <footer>
-            2026
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Afficher un CSV dans HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <script src="menu_json.js" defer></script>
+</head>
+<body>
+    <nav id="menu">{le_menu}</nav>
+    <h1>Ouvrir un fichier CSV</h1>
+    <input type="file" id="csvFile" accept=".csv">
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('csvFile').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) {
+                alert("Veuillez sélectionner un fichier CSV.");
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const text = event.target.result;
+                displayCSV(text);
+            };
+            reader.onerror = function() {
+                alert("Erreur lors de la lecture du fichier.");
+            };
+            reader.readAsText(file, 'UTF-8');
+        });
+
+        function displayCSV(csvText) {
+            // Conversion : Le texte est découpé en lignes (split(/\r?\n/)) puis en colonnes (split(','))
+            const rows = csvText.trim().split(/\r?\n/);
+            const table = document.createElement('table');
+
+            rows.forEach((row, index) => {
+                const tr = document.createElement('tr');
+                const cells = row.split(',');
+
+                cells.forEach(cell => {
+                    const td = document.createElement(index === 0 ? 'th' : 'td');
+                    td.textContent = cell.trim();
+                    tr.appendChild(td);
+                });
+
+                table.appendChild(tr);
+            });
+
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = ''; // Nettoyer avant d'afficher
+            outputDiv.appendChild(table);
+        }
+    </script>
+</body>
 </html>
